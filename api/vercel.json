@@ -1,0 +1,10 @@
+{
+    "installCommand": "yarn",
+    "buildCommand": "yarn build",
+    "outputDirectory": "dist",
+    "functions": {
+        "src/**/*.ts": {
+            "runtime": "node@20.11.0"
+        }
+    }
+}
