@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: cd mobile && yarn && yarn expo login -u abrocha
+    command: yarn start
+    name: mobile
+
+  - init: docker start mongodb 
+    command: cd api && yarn dev
+    name: api
+
