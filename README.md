@@ -41,10 +41,10 @@ Outra hipótese posta foi em salvar os dados de alguma destas APIs no nosso banc
 
 ## Tecnologias Utilizadas 🧑‍💻
 
-- TypeScript
 
 #### Mobile
 
+- TypeScript
 - React-Native
 - Expo
 - Expo-router
@@ -56,12 +56,14 @@ Outra hipótese posta foi em salvar os dados de alguma destas APIs no nosso banc
 
 #### Dashboard Web
 
+- TypeScript
 - NextJS
 - TailwindCSS
 - Axios
 
 #### API
 
+- TypeScript
 - Fastify
 - Resend (Envio de emails)
 - MongoDB
