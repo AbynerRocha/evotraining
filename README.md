@@ -66,6 +66,10 @@ Outra hipótese posta foi em salvar os dados de alguma destas APIs no nosso banc
 - TypeScript
 - Fastify
 - Resend (Envio de emails)
+- Mongoose
+
+### Banco de Dados
+
 - MongoDB
 
 ---
