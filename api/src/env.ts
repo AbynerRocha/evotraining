@@ -13,12 +13,6 @@ const envSchema = z.object({
     CONNECT_URL_MONGODB: z.string(),
 
     RESEND_API_KEY: z.string(),
-
-    // Cloudflare 
-    CLOUDFLARE_ACCOUNT_ID: z.string(),
-    CLOUDFLARE_ACCESS_KEY: z.string(),
-    CLOUDFLARE_SECRET_ACCESS_KEY: z.string(),
-    CLOUDFLARE_BUCKET: z.string()
 })
 
 export const env = envSchema.parse(process.env)
