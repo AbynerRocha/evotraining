@@ -7,7 +7,7 @@
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
 
 
-🇺🇸 [English Version](https://github.com/AbynerRocha/evotraining)
+🇺🇸 [English Version](https://github.com/AbynerRocha/evotraining/README-en.md)
 
 **EvoTraining** é um projeto criado para a PAP (Prova de Aptidão Profissional) da Escola Profissional do Infante que consiste de um aplicativo mobile de gerenciamento de treinos de musculação.
 
@@ -18,14 +18,14 @@
 - [Funcionalidades](#funcionalidades)
 - [Pré-requisitos](#pre-requisitos)
 - [Como Rodar o Projeto](#como-rodar)
-    - [Instalação](#como-rodar)
+    - [Requisitos](#como-rodar)
     - [Executando o Aplicativo Mobile](#exec-app-mobile)
     - [Executando a API](#exec-api)
-    - [Executando Admi Dashboard](#exec-admin-dashboard)
+    - [Executando Web Dashboard](#exec-admin-dashboard)
 
 ---
 
-## Sobre o Projeto 🌟
+## 🌟 Sobre o Projeto 
 
 **EvoTraining** é um projeto criado para a PAP (Prova de Aptidão Profissional) da Escola Profissional do Infante que consiste de um aplicativo mobile de gerenciamento de treinos de musculação.
 
@@ -37,51 +37,113 @@ Durante o planejamento, foi posta uma questão: *Como que os dados contendo os e
 
 Outra hipótese posta foi em salvar os dados de alguma destas APIs no nosso banco de dados e até funcionou, mas faltava algo essencial: As ilustrações dos exercícios. Algumas tinham mas com tokenização que significava que iria ter que fazer outra requisição para aquela API para ter a ilutração então essa hipótese também foi descartada, Naquele momento surgiu a ideia de criar uma dashboard web para que a "equipe" pudesse adicionar os exercícios manualmente com o tempo, e foi a ideia de adotamos.
 
+Durante o planejamento e desenvolvimento deste projeto consegui aprimorar muito meus conhecimentos, principalmente com mobile, que, como eu havia dito anteriormente eu não tinha nenhum. E acredito que isso se reflete até mesmo no código em questão de organização e performance. E perante o tempo escasso que me foi posto para finalizar este projeto, fico muito feliz com o resultado.
+
 ---
 
-## Tecnologias Utilizadas 🧑‍💻
+## 🧑‍💻 Tecnologias Utilizadas
 
 
 #### Mobile
-
-- TypeScript
-- React-Native
-- Expo
-- Expo-router
-- Native-Base
-- NativeWind (estilização)
-- Moti (Animações)
-- React-hook-form
-- Axios 
+- [React-Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [Expo-router](https://docs.expo.dev/router/introduction/)
+- [Native-Base](https://nativebase.io/)
+- [NativeWind](https://www.nativewind.dev/)
+- [Moti](https://moti.fyi/)
+- [React-Hook-Form](https://react-hook-form.com/)
+- [Axios](https://axios-http.com/)
 
 #### Dashboard Web
-
-- TypeScript
-- NextJS
-- TailwindCSS
-- Axios
+- [NextJs](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
 
 #### API
-
-- TypeScript
-- Fastify
-- Resend (Envio de emails)
-- Mongoose
+- [Fastify](https://fastify.dev/)
+- [Resend](https://resend.com/)
+- [Mongoose](mongoosejs.com)
 
 ### Banco de Dados
-
-- MongoDB
-
----
-
-## Funcionalidades 📱
+- [MongoDB](https://www.mongodb.com/)
 
 ---
 
-## Pré-Requisitos 🖥️
+## 📱 Funcionalidades 
+
+### Mobile
+- Criar planos de treinos para si mesmo ou para terceiros.
+- Ajustar os treinos durante a semana na agenda do aplicativo.
+- Definir tempo de descanso entre as series.
+- Armazenar as cargas utilizadas em cada serie de cada exercício.
+- Poder acompanhar a evolução de cargas e treinos feitos em cada mês através de um gráfico no perfil do usuário.
+- Compartilhar os resultados com amigos (30%)
+
+---
+### Web
+
+- Gerenciar os exercícios contidos no aplicativo.
+- Gerenciar os usuários (50%)
 
 ---
 
-## Como Rodar ⚙️
+## 🖥️ Pré-Requisitos 
+- [NodeJS  versão LTS recomendada ](https://nodejs.org/pt)
+-  [Yarn](https://yarnpkg.com/) ou NPM
+- [Expo CLI](https://expo.dev/)
+- [Android Studio com SDKs instalados (para rodar no Android)](https://developer.android.com/studio)
+- [Docker](https://www.docker.com/) & [Docker Compose](https://docs.docker.com/compose/)
 
----
+### Environment Variables
+
+Siga o modelo que esta no arquivo `.env.example`
+
+## ⚙️ Como Rodar 
+**Este projeto não foi testado no IOS**
+
+### 📁 Clonar Repositório
+
+    git clone https://github.com/AbynerRocha/evotraining.git
+    cd evotraining
+
+### 📱 Instalar dependências e iniciar Mobile 
+
+    cd mobile
+    yarn ou npm install
+    
+    yarn start 
+    # ou 
+    npm run start
+
+### 🖥️ Instalar dependências e iniciar Web
+
+    cd site
+    yarn ou npm install
+    
+    yarn build 
+    # ou 
+    npm run build
+    
+    yarn start ou npm run start
+ 
+  ### 🖥️ Instalar dependências e iniciar API
+
+    cd api
+    
+    yarn 
+    # ou 
+    npm install
+    
+    yarn build 
+    # ou 
+    npm run build
+    
+    yarn start 
+    # ou 
+    npm run start
+  
+### 🎲 Banco de dados
+ 
+ Na raiz do projeto
+
+    docker-compose up
