@@ -6,7 +6,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-v6.0.0-green?logo=mongodb\&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-🌟 [Versão em Português](https://github.com/AbynerRocha/evotraining/README.md)
+🌟 [Versão em Português](https://github.com/AbynerRocha/evotraining/blob/main/README.md)
 
 **EvoTraining** is a project created for the PAP (Professional Aptitude Test) of Escola Profissional do Infante. It consists of a mobile app for managing weight training routines.
 
