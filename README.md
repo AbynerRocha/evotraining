@@ -7,7 +7,7 @@
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
 
 
-🇺🇸 [English Version](https://github.com/AbynerRocha/evotraining/README-en.md)
+🇺🇸 [English Version](https://github.com/AbynerRocha/evotraining/blob/main/README-en.md)
 
 **EvoTraining** é um projeto criado para a PAP (Prova de Aptidão Profissional) da Escola Profissional do Infante que consiste de um aplicativo mobile de gerenciamento de treinos de musculação.
 
